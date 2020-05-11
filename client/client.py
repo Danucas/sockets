@@ -30,8 +30,8 @@ class SocketClient():
     def __init__(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # the ip for the Server
-        # self.ip = '35.231.236.18'
-        self.ip = socket.gethostname()
+        self.ip = '35.231.236.18'
+        # self.ip = socket.gethostname()
         # the port to be talk to
         self.user = self.check_installed_user()
         self.name = self.user["username"].encode('utf-8')
