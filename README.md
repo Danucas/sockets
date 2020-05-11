@@ -4,7 +4,7 @@
 
 `./install`
 
-[client](client)
+cd to [client](client) and type
 
 `./chat.py`
 
