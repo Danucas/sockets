@@ -61,7 +61,7 @@ class SocketClient():
         data["state"] = "new"
         heads = {}
         heads["Content-Type"] = "application/json"
-        url = "http://0.0.0.0:5000/api/v1/chat_room"
+        url = "http://web-01.dnart.tech:5000/api/v1/chat_room"
         resp = requests.post(url, json=data, headers=heads)
         print("\tChat room created\n\t(Id): {}".format(resp.json()["id"]))
         print("\t\033[33mShare this id with yours peers\033[0m")
@@ -78,7 +78,7 @@ class SocketClient():
         _id = input("Chat room id> ")
         data = {"id": _id}
         heads = {"Content-Type": "application/json"}
-        url = "http://0.0.0.0:5000/api/v1/chat_room"
+        url = "http://web-01.dnart.tech:5000/api/v1/chat_room"
         resp = requests.get(url, json=data, headers=heads)
         # wait = input("Continue? > ")
         self.run(resp.json())
