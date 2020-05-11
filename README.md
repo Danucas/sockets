@@ -25,3 +25,7 @@ Select any option
 connected to rbT38UdjCo2kzH0n
 ________________________________
 Guafe > ```
+
+
+share the room Id: rbT38UdjCo2kzH0n
+and start talking via socket
