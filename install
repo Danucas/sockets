@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 
-# sudo pip3 install playsound
+sudo pip3 install playsound
 # sudo apt-get install libgstreamer0.10-dev libgstreamer0.10-0-dbg libgstreamer0.10-0 gstreamer0.10-tools gstreamer-tools gstreamer0.10-doc gstreamer0.10-ffmpeg gstreamer0.10-x
-# sudo apt-get install gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-tools
-sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-sudo apt-get install ffmpeg libav-tools
+sudo apt-get install -y gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-tools
+sudo apt-get install -y libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+sudo apt-get install -y ffmpeg libav-tools
 sudo pip3 install pyaudio

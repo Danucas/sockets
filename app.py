@@ -26,6 +26,7 @@ def new_socket(port, _id):
         sockets = {}
     with open("sockets.json", "w") as socks:
         sockets[_id] = port
+        os.system("ufw allow " + port)
         socks.write(json.dumps(sockets))
     sock = SocketServer(port, _id)
 
