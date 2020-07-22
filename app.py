@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Sockets router server
+"""
+
 
 from flask import Flask, request, jsonify
 import socket
@@ -17,7 +21,8 @@ app = Flask(__name__)
 
 def new_socket(port, _id):
     """
-    Threading the new socket
+    Threading the new socket and
+    allow the new port in the firewall
     """
     try:
         with open("sockets.json", "r") as socks:
